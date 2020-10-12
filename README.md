@@ -8,4 +8,4 @@ Using
 * Redux-Thunk
 * Firebase
 
-URL: gonramos.github.io/photo-gallery/
+[Go to gallery](https://gonramos.github.io/photo-gallery/)
