@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import './styles/style.css'
-import {BrowserRouter} from 'react-router-dom'
+import {HashRouter} from 'react-router-dom'
 import {createStore, applyMiddleware} from 'redux'
 import rootReducer from './reducers/reducer'
 import {Provider} from 'react-redux' 
@@ -11,4 +11,4 @@ import thunk from 'redux-thunk'
 
 const store = createStore(rootReducer, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__(), applyMiddleware(thunk))
 
-ReactDOM.render(<Provider store={store}><BrowserRouter><App/></BrowserRouter></Provider>, document.getElementById('root'))
+ReactDOM.render(<Provider store={store}><HashRouter><App/></HashRouter></Provider>, document.getElementById('root'))
